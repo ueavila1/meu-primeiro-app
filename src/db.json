@@ -1,0 +1,10 @@
+{
+  "status": "Conectado ao Banco de Dados de Produção",
+  "versao_do_banco": "v1.0.0",
+  "itens": [
+    {"id": 1, "task": "Aprender o que é SDLC"},
+    {"id": 2, "task": "Entender o que é Git e GitHub"},
+    {"id": 3, "task": "Criar meu primeiro Pipeline"},
+    {"id": 4, "task": "Fazer meu primeiro Deploy"}
+  ]
+}

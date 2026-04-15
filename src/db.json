@@ -5,7 +5,7 @@
     {"id": 1, "task": "Aprender o que é SDLC"},
     {"id": 2, "task": "Entender o que é Git e GitHub"},
     {"id": 3, "task": "Criar meu primeiro Pipeline"},
-    {"id": 4, "task": "Fazer meu primeiro Deploy"}
-    {"id": 5, "task": "Primeiro Pipeline Actions"}
+    {"id": 4, "task": "Fazer meu primeiro Deploy"},
+    {"id": 5, "task": "Nova tarefa"}
   ]
 }

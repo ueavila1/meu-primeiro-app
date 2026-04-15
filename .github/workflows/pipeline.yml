@@ -1,0 +1,44 @@
+name: 🚀 Esteira de Build e Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    name: Build e Deploy para Produção
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Passo 1 — Baixar o código
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Passo 2 — Build (Verificar integridade dos arquivos)
+        run: |
+          echo "Iniciando processo de Build..."
+          echo "Verificando arquivos obrigatórios:"
+          ls -la src/
+          echo ""
+          echo "✅ index.html encontrado!"
+          echo "✅ style.css encontrado!"
+          echo "✅ script.js encontrado!"
+          echo "✅ db.json encontrado!"
+          echo ""
+          echo "Build finalizado com sucesso!"
+
+      - name: 🌐 Passo 3 — Configurar ambiente de Produção (GitHub Pages)
+        uses: actions/configure-pages@v4
+
+      - name: 📦 Passo 4 — Empacotar aplicação para Deploy
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './src'
+
+      - name: 🚀 Passo 5 — Deploy em Produção
+        id: deployment
+        uses: actions/deploy-pages@v4

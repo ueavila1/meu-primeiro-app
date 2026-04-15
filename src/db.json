@@ -6,6 +6,8 @@
     {"id": 2, "task": "Entender o que é Git e GitHub"},
     {"id": 3, "task": "Criar meu primeiro Pipeline"},
     {"id": 4, "task": "Fazer meu primeiro Deploy"},
-    {"id": 5, "task": "Nova tarefa"}
+    {"id": 5, "task": "Nova tarefa"},
+    {"id": 6, "task": "Tarefa 1 15/04"},
+    {"id": 7, "task": "Tarefa 2 15/04"}
   ]
 }
